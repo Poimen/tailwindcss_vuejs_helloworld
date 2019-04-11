@@ -15,7 +15,8 @@ module.exports = {
       'anonymous': 'never',
       'named': 'never',
       'asyncArrow': 'never'
-    }]
+    }],
+    'eol-last': ['error', 'always']
   },
   parserOptions: {
     parser: 'babel-eslint'
