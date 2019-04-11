@@ -1,8 +1,10 @@
 import Vue from 'vue';
-import '@/assets/css/tailwind.css';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+
+// import '@/assets/css/tailwind.css';
+import '@/styles/site.scss';
 
 Vue.config.productionTip = false;
 
