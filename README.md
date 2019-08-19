@@ -28,9 +28,16 @@ npx init tailwind
 @tailwind utilities;
 ```
 
-6. Import `tailwind.css` into `main.js`
+6. Use tailwindcss inside `site.scss`:
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-7. Test...and it should all work....
+7. Import `site.scss` into `main.js`
+
+8. Test...and it should all work....
 
 ## After production build...
 Sizes:
@@ -52,10 +59,6 @@ npm install --save-dev @fullhuman/postcss-purgecss
 
 3. Update `postcss.config.js` to include above modules
 
-4. Add css build step for Vue CLI
-```
-"build:css": "postcss asserts/css/tailwind.css -o static/dist/tailwind.css"
-```
 
 ## After optimisations
 8.0K    dist/css
