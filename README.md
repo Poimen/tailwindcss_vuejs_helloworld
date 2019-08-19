@@ -10,20 +10,20 @@ This is just a sample application from Vue CLI and attempt at an optimised Tailw
 vue create .
 ```
 
-2. npm install tailwind
+2. npm install tailwindcss
 ```
-npm install --save-dev tailwind
+npm install --save-dev tailwindcss
 ```
 
 3. Generate configuration file
 ```
-./node_modules/.bin/tailwind init tailwind.js
+npx init tailwind
 ```
 
 4. Add `postcss.config.js` changes
 5. Add `tailwind.css` with:
 ```
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
