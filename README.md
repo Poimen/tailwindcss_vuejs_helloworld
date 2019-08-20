@@ -40,11 +40,14 @@ npx init tailwind
 8. Test...and it should all work....
 
 ## After production build...
-Sizes:
-308K    dist/css
-736K    dist/js
-12K     dist/img
-1.1M    dist/
+```
+  File                                 Size               Gzipped
+
+  dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
+  dist/js/app.a44c6bfd.js              7.16 KiB           2.73 KiB
+  dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
+  dist/css/app.dd43ce07.css            620.96 KiB         80.00 KiB
+```
 
 ## Optimisations
 1. Install cssnano
@@ -61,12 +64,13 @@ npm install --save-dev @fullhuman/postcss-purgecss
 
 
 ## After optimisations
-8.0K    dist/css
-736K    dist/js
-12K     dist/img
-768K    dist/
-
-
+```
+  File                                 Size               Gzipped
+  dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
+  dist/js/app.d731a3d0.js              7.20 KiB           2.75 KiB
+  dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
+  dist/css/app.f0cac879.css            1.89 KiB           0.77 KiB
+```
 
 ## Thanks to blog posts:
 - https://flaviocopes.com/vue-tailwind/
