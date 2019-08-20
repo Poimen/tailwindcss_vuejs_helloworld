@@ -21,23 +21,19 @@ npx init tailwind
 ```
 
 4. Add `postcss.config.js` changes
-5. Add `tailwind.css` with:
+5. Add `src/assets/tailwind.css` with:
 ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
-6. Use tailwindcss inside `site.scss`:
+6. Add tailwind to App.vue:
 ```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+<style src="./assets/tailwind.css">
 ```
 
-7. Import `site.scss` into `main.js`
-
-8. Test...and it should all work....
+7. Test...and it should all work....
 
 ## After production build...
 ```
@@ -77,7 +73,8 @@ npm install --save-dev @fullhuman/postcss-purgecss
 - https://flaviocopes.com/tailwind-setup/
 - https://nick-basile.com/blog/post/setting-up-tailwind-in-a-laravel-project
 - https://medium.com/backticks-tildes/how-to-configure-your-vue-js-app-to-use-tailwind-css-a6f95d06e1c7
-
+- https://github.com/tailwindcss/setup-examples/tree/master/examples/vue-cli
+- https://github.com/tailwindcss/playground
 
 ## Project setup
 ```
