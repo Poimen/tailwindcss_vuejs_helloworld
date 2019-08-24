@@ -62,6 +62,7 @@ npm install --save-dev @fullhuman/postcss-purgecss
 ## After optimisations
 ```
   File                                 Size               Gzipped
+  
   dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
   dist/js/app.d731a3d0.js              7.20 KiB           2.75 KiB
   dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
