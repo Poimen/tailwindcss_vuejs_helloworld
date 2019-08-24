@@ -17,7 +17,7 @@ npm install --save-dev tailwindcss
 
 3. Generate configuration file
 ```
-npx init tailwind
+npx tailwind init
 ```
 
 4. Add `postcss.config.js` changes
