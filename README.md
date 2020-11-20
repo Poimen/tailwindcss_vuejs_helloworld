@@ -37,6 +37,11 @@ npx tailwind init
 
 ## After production build...
 ```
+npm run build
+```
+
+should output something similar to:
+```
   File                                 Size               Gzipped
 
   dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
@@ -61,8 +66,13 @@ npm install --save-dev @fullhuman/postcss-purgecss
 
 ## After optimisations
 ```
+npm run build
+```
+
+should output something similar to:
+```
   File                                 Size               Gzipped
-  
+
   dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
   dist/js/app.d731a3d0.js              7.20 KiB           2.75 KiB
   dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
@@ -76,23 +86,3 @@ npm install --save-dev @fullhuman/postcss-purgecss
 - https://medium.com/backticks-tildes/how-to-configure-your-vue-js-app-to-use-tailwind-css-a6f95d06e1c7
 - https://github.com/tailwindcss/setup-examples/tree/master/examples/vue-cli
 - https://github.com/tailwindcss/playground
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
