@@ -55,3 +55,7 @@ should output something similar to:
 ## Optimisations
 
 By default Tailwind runs purgecss to remove unnecessary styles. Any further optimisation do not add significant value.
+
+For other CSS assets, `cssnano` has been added. This does not reduce tailwind sizes.
+
+For further reductions to suite your use case - refer the tailwind [docs](https://tailwindcss.com/docs/optimizing-for-production)
