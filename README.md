@@ -2,7 +2,11 @@
 
 Hello World test project for trying out [Tailwindcss](https://tailwindcss.com)
 
-This is just a sample application from Vue CLI and attempt at an optimised Tailwind css output
+This is just a sample application from Vue CLI and attempt at an optimised Tailwind css output.
+
+Versions:
+- VueJS 3
+- TailwindCSS 2.0.1
 
 ## Steps
 1. Vue CI scaffold project with separate config files:
