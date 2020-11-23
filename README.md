@@ -1,6 +1,6 @@
 # Tailwindcss and VueJS Hello World
 
-Hello World test project for trialing out [Tailwindcss](https://tailwindcss.com)
+Hello World test project for trying out [Tailwindcss](https://tailwindcss.com)
 
 This is just a sample application from Vue CLI and attempt at an optimised Tailwind css output
 
@@ -10,30 +10,33 @@ This is just a sample application from Vue CLI and attempt at an optimised Tailw
 vue create .
 ```
 
-2. npm install tailwindcss
+2. npm install tailwindcss and dependencies
+
+VueJS 3 does not currently support PostCSS 8, so install the [compat](https://tailwindcss.com/docs/installation#post-css-7-compatibility-build) build for Tailwind.
+
 ```
-npm install --save-dev tailwindcss
+npm install --save-dev tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
 
-3. Generate configuration file
+1. Generate configuration file
 ```
 npx tailwind init
 ```
 
 4. Add `postcss.config.js` changes
-5. Add `src/assets/tailwind.css` with:
+5. Add `src/assets/styles/tailwind.css` with:
 ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
-6. Add tailwind to App.vue:
+6. Add tailwind to main.js:
 ```
-<style src="./assets/tailwind.css">
+import './assets/styles/tailwind.css';
 ```
 
-7. Test...and it should all work....
+7. Test...and it should all work...
 
 ## After production build...
 ```
@@ -42,47 +45,13 @@ npm run build
 
 should output something similar to:
 ```
-  File                                 Size               Gzipped
+  File                                 Size                Gzipped
 
-  dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
-  dist/js/app.a44c6bfd.js              7.16 KiB           2.73 KiB
-  dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
-  dist/css/app.dd43ce07.css            620.96 KiB         80.00 KiB
+  dist/js/chunk-vendors.521b3b6f.js    78.00 KiB           29.32 KiB
+  dist/js/app.aecd2ab8.js               2.23 KiB            1.10 KiB
+  dist/css/app.8eff8a4c.css             3.62 KiB            1.33 KiB
 ```
 
 ## Optimisations
-1. Install cssnano
-```
-npm install --save-dev cssnano
-```
 
-2. Install purgecss
-```
-npm install --save-dev @fullhuman/postcss-purgecss
-```
-
-3. Update `postcss.config.js` to include above modules
-
-
-## After optimisations
-```
-npm run build
-```
-
-should output something similar to:
-```
-  File                                 Size               Gzipped
-
-  dist/js/chunk-vendors.2bfcdb6b.js    118.22 KiB         41.09 KiB
-  dist/js/app.d731a3d0.js              7.20 KiB           2.75 KiB
-  dist/js/about.f80e36fb.js            0.44 KiB           0.31 KiB
-  dist/css/app.f0cac879.css            1.89 KiB           0.77 KiB
-```
-
-## Thanks to blog posts:
-- https://flaviocopes.com/vue-tailwind/
-- https://flaviocopes.com/tailwind-setup/
-- https://nick-basile.com/blog/post/setting-up-tailwind-in-a-laravel-project
-- https://medium.com/backticks-tildes/how-to-configure-your-vue-js-app-to-use-tailwind-css-a6f95d06e1c7
-- https://github.com/tailwindcss/setup-examples/tree/master/examples/vue-cli
-- https://github.com/tailwindcss/playground
+By default Tailwind runs purgecss to remove unnecessary styles. Any further optimisation do not add significant value.
