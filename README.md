@@ -24,7 +24,7 @@ npm install --save-dev tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 a
 
 1. Generate configuration file
 ```
-npx tailwind init
+npx tailwindcss inits
 ```
 
 4. Add `postcss.config.js` changes
