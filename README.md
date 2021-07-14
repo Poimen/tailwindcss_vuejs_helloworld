@@ -6,7 +6,7 @@ This is just a sample application from Vue CLI and attempt at an optimised Tailw
 
 Versions:
 - VueJS 3
-- TailwindCSS 2.0.1
+- TailwindCSS 2.2.4
 
 ## Steps
 1. Vue CI scaffold project with separate config files:
@@ -41,6 +41,8 @@ import './assets/styles/tailwind.css';
 ```
 
 7. Test...and it should all work...
+
+The example components also show the tailwind [JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) syntax.
 
 ## After production build...
 ```
