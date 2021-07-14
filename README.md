@@ -51,9 +51,9 @@ should output something similar to:
 ```
   File                                 Size                Gzipped
 
-  dist/js/chunk-vendors.521b3b6f.js    78.00 KiB           29.32 KiB
-  dist/js/app.aecd2ab8.js               2.23 KiB            1.10 KiB
-  dist/css/app.8eff8a4c.css             3.62 KiB            1.33 KiB
+  dist\js\chunk-vendors.d37d1dc5.js    82.14 KiB           30.85 KiB
+  dist\js\app.174f1285.js              3.80 KiB            1.68 KiB
+  dist\css\app.b0a48201.css            7.70 KiB            2.17 KiB
 ```
 
 ## Optimisations
